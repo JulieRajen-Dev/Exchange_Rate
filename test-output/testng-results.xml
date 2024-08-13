@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-13T23:34:12 IST" name="Default suite" finished-at="2024-08-13T23:35:11 IST" duration-ms="58695">
+  <suite started-at="2024-08-13T23:50:56 IST" name="Default suite" finished-at="2024-08-13T23:51:55 IST" duration-ms="59840">
     <groups>
     </groups>
-    <test started-at="2024-08-13T23:34:12 IST" name="Default test" finished-at="2024-08-13T23:35:11 IST" duration-ms="58695">
+    <test started-at="2024-08-13T23:50:56 IST" name="Default test" finished-at="2024-08-13T23:51:55 IST" duration-ms="59840">
       <class name="TraditionalWay.ViewExchangeRate">
-        <test-method is-config="true" signature="init()[pri:0, instance:TraditionalWay.ViewExchangeRate@78123e82]" started-at="2024-08-13T23:34:12 IST" name="init" finished-at="2024-08-13T23:34:16 IST" duration-ms="3625" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:TraditionalWay.ViewExchangeRate@16a0ee18]" started-at="2024-08-13T23:50:56 IST" name="init" finished-at="2024-08-13T23:51:00 IST" duration-ms="4419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testLogin()[pri:0, instance:TraditionalWay.ViewExchangeRate@78123e82]" started-at="2024-08-13T23:34:16 IST" name="testLogin" finished-at="2024-08-13T23:35:11 IST" duration-ms="55012" status="PASS">
+        <test-method signature="getExchangeRates()[pri:0, instance:TraditionalWay.ViewExchangeRate@16a0ee18]" started-at="2024-08-13T23:51:00 IST" name="getExchangeRates" finished-at="2024-08-13T23:51:55 IST" duration-ms="55359" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
+        </test-method> <!-- getExchangeRates -->
       </class> <!-- TraditionalWay.ViewExchangeRate -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

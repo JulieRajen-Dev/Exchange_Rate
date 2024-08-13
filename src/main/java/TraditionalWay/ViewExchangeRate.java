@@ -30,7 +30,7 @@ public class ViewExchangeRate {
 	}
 
 	@Test
-	public void testLogin() throws InterruptedException {
+	public void getExchangeRates() throws InterruptedException {
 		//Launch view exchange site
 		driver.get("https://foservices.icegate.gov.in/#/services/viewExchangeRate");
 		Thread.sleep(10*1000);
