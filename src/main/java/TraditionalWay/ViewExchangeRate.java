@@ -1,5 +1,7 @@
 package TraditionalWay;
 
+import java.util.Scanner;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,7 +33,8 @@ public class ViewExchangeRate {
 	public void testLogin() throws InterruptedException {
 		//Launch view exchange site
 		driver.get("https://foservices.icegate.gov.in/#/services/viewExchangeRate");
-
+		Thread.sleep(10*1000);
+		
 		//select Currency Code dropdown
 		driver.findElement(By.xpath("//mat-select[@formcontrolname='currencyCode']")).click();
 		Thread.sleep(1000);
@@ -48,12 +51,17 @@ public class ViewExchangeRate {
 		Thread.sleep(3000);
 
 		//get import rate
-		String importRateStr = getImportRate("USD");
-		System.out.println("Import Rate for USD : "+ importRateStr);
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter countryCode: ");
+
+	    String countryCode = sc.nextLine();  // Read user input
+	    System.out.println("countryCode is: " + countryCode);  // Output user input
+		String importRateStr = getImportRate(countryCode);
+		System.out.println("Import Rate for "+countryCode+" : "+ importRateStr);
 
 		//get export rate
-		String exportRateStr = getExportRate("USD");
-		System.out.println("Export Rate for USD : "+ exportRateStr);
+		String exportRateStr = getExportRate(countryCode);
+		System.out.println("Export Rate for "+countryCode+" : "+ exportRateStr);
 
 
 	}
