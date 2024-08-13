@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 public class ViewExchangeRate {
 
+	 
 	WebDriver driver;
 
 	@BeforeMethod
